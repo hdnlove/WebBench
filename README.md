@@ -33,7 +33,7 @@ Webbench是一个在linux下使用的非常简单的网站压测工具。它使�
 
 > wget http://www.ha97.com/code/webbench-1.5.tar.gz
 
- tar zxvf webbench-1.5.tar.gz
+tar zxvf webbench-1.5.tar.gz
 > cd webbench-1.5
 > make
 > make install
