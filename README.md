@@ -27,3 +27,30 @@ Webbench是一个在linux下使用的非常简单的网站压测工具。它使�
 |       |--trace                |使用 TRACE请求方法                 |
 |-?/-h  |--help                 |打印帮助信息                       |
 |-V     |--version              |显示版本号                         |
+
+
+1、WebBench安装：
+
+wget http://www.ha97.com/code/webbench-1.5.tar.gz
+tar zxvf webbench-1.5.tar.gz
+cd webbench-1.5
+make
+make install
+
+2、WebBench使用：
+webbench -c 1000 -t 60 http://192.168.80.157/phpinfo.php
+webbench -c 并发数 -t 运行测试时间 URL
+
+Apache测试实例结果：
+当并发300时，
+root [ ~ ]# webbench -c 300 -t 60 http://192.168.80.157/phpinfo.php
+Webbench - Simple Web Benchmark 1.5
+Copyright (c) Radim Kolar 1997-2004, GPL Open Source Software.
+
+Benchmarking: GET http://192.168.80.157/phpinfo.php
+300 clients, running 60 sec.
+
+Speed=24525 pages/min, 20794612 bytes/sec.
+Requests: 24525 susceed, 0 failed.
+
+每秒钟响应请求数：24525 pages/min，每秒钟传输数据量20794612 bytes/sec.
