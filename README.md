@@ -32,10 +32,10 @@ Webbench是一个在linux下使用的非常简单的网站压测工具。它使�
 ## 1、WebBench安装：
 
 > wget http://www.ha97.com/code/webbench-1.5.tar.gz
-tar zxvf webbench-1.5.tar.gz
-cd webbench-1.5
-make
-make install
+  tar zxvf webbench-1.5.tar.gz
+  cd webbench-1.5
+  make
+  make install
 
 ## 2、WebBench使用：
 * webbench -c 1000 -t 60 http://192.168.80.157/phpinfo.php
